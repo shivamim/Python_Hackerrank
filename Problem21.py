@@ -1,8 +1,9 @@
 #TASK 
-'''Convert Decimal number to octal using print() output formatting'''
+'''Read line number 4 from the following file'''
 
 #SOLUTION 
-
-decimal_number = int(input("Enter your number:"))
-print("Decimal:", decimal_number)
-print("Octal:", "%o" % decimal_number)
+with open("test.txt", "r") as fp:
+    # read all lines from a file
+    lines = fp.readlines()
+    # get line number 3
+    print(lines[2])
